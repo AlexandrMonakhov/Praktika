@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
     <title>MAGNO</title>
 </head>
 <body>
@@ -22,10 +23,10 @@
     <div class="menu">
         <ul>
             <li><a href="index.html" class="goods-item">Все категории</a>
-                    <ul class="hidden-menu">
-                       <li><a href="laptop.html">Hоутбуки<a></li>
-                        <li><a href="periphery.html">Периферия<a></li>
-                        <li><a href="lamps.html">Дополнительно<a></li>
+                     <ul class="hidden-menu">
+                       <li><a href="laptop.html">Hоутбуки для офиса<a></li>
+                        <li><a href="periphery.html">Ноутбуки для учёбы<a></li>
+                        <li><a href="dop.html">Игровые ноутбуки<a></li>
                     </ul>
             </li>
             <li><a href="#" class="goods-item">Доставка</a></li>
@@ -38,9 +39,9 @@
         <ul class="sidebar-menu">
             <li><a href="#">Главная</a> /&nbsp;</li>
             <li><a href="#">Каталог</a> /&nbsp;</li>
-            <li><a href="#">Дополнительно</a></li>
+            <li><a href="#">Игровые ноутбуки</a></li>
         </ul>
-        <h2>Дополнительно</h2>
+        <h2>Игровые ноутбуки</h2>
             <div class="sidebar-goods-deal">
         	   <div class="filter-title"><h2>Фильтры</h2></div>
 	            <h2>Сортировка</h2>
@@ -68,35 +69,124 @@
                 <a href="#">Сбросить фильтр</a>
             </div>
         <div class="sidebar-goods">
+
             <div class="products">
             	<span>В наличии</span>
-                <img src="images/corvet1.png" alt="">
+                <img src="images/ga1.png" alt="">
                 <p>Ноутбук Hp Pavillion 6</p>
                 <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
+                    <div class="products_info">
+                        <input type="checkbox" id="fclose">
+                            <div class="products_items">
+                            <p>Steelseries мышка</p>
+                            <img src="images/mouse1.png" alt="">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Коврик для мыши Razer</p>
+                                <img src="images/corvet1.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Наушники Senheizer</p>
+                                <img src="images/headphone.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <button class="products-btn" onclick="show2()">В корзину</button>
             </div>
+
             <div class="products">
                 <span>В наличии</span>
-                <img src="images/headphone.png" alt="">
+                <img src="images/ga2.png" alt="">
                 <p>Ноутбук Hp Pavillion 6</p>
                 <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
+                <div class="products_info_1">
+                        <input type="checkbox" id="fclose">
+                            <div class="products_items">
+                            <p>Steelseries мышка</p>
+                            <img src="images/mouse1.png" alt="">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Коврик для мыши Razer</p>
+                                <img src="images/corvet1.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Наушники Senheizer</p>
+                                <img src="images/headphone.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <button class="products-btn" onclick="show3()">В корзину</button>
             </div>
+
             <div class="products">
                 <span>В наличии</span>
-                <img src="images/games.png" alt="">
+                <img src="images/ga3.png" alt="">
                 <p>Ноутбук Hp Pavillion 6</p>
                 <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
+                 <div class="products_info_2">
+                        <input type="checkbox" id="fclose">
+                            <div class="products_items">
+                            <p>Steelseries мышка</p>
+                            <img src="images/mouse1.png" alt="">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Коврик для мыши Razer</p>
+                                <img src="images/corvet1.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Наушники Senheizer</p>
+                                <img src="images/headphone.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <button class="products-btn" onclick="show4()">В корзину</button>
             </div>
+
             <div class="products">
                 <span>В наличии</span>
-                <img src="images/corvet2.png" alt="">
+                <img src="images/ga4.png" alt="">
                 <p>Ноутбук Hp Pavillion 6</p>
-                <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
+                <p>11020 руб</p><div class="products_info_3">
+                        <input type="checkbox" id="fclose">
+                            <div class="products_items">
+                            <p>Steelseries мышка</p>
+                            <img src="images/mouse1.png" alt="">
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Коврик для мыши Razer</p>
+                                <img src="images/corvet1.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fclose">
+                                <div class="products_items">
+                                <p>Наушники Senheizer</p>
+                                <img src="images/headphone.png" alt="">
+                                </div>
+                            </div>
+                    </div>
+                    <button class="products-btn" onclick="show5()">В корзину</button>
+            </div>
             </div>
     	</div> 
+
     </div>
     <div class="pages wrapper">
     	<ul class="pages-select">
@@ -108,7 +198,7 @@
     	</ul>
     </div>
 </div>
-    <footer>
+  <footer>
         <div class="footer-top">
             <div class="footer-top-container wrapper">
                 <div class="wrap-footer wrapper">
@@ -130,18 +220,20 @@
                         <li><a href="#" class="goods-item">Гарантия</a></li>
                         <li><a href="#" class="goods-item">Контакты</a></li>
                     </ul>
-                    <img src="images/map.jpg" alt="">
+                   <img src="images/map.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="contacts">
-            <p>Все права защищены, 2017</p>
-            <ul class="social">
-                <li><a href="https://www.vk.com/" target="_blank"><i class="fa fa-vk"></i></a></li>
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            </ul>
+        <div class="contacts_bg">
+            <div class="contacts wrapper">
+                <p>Все права защищены, 2017</p>
+                <ul class="social">
+                    <li><a href="https://www.vk.com/" target="_blank"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
