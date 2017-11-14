@@ -39,9 +39,9 @@
         <ul class="sidebar-menu">
             <li><a href="#">Главная</a> /&nbsp;</li>
             <li><a href="#">Каталог</a> /&nbsp;</li>
-            <li><a href="#">Hоутбуки для офиса</a></li>
+            <li><a href="#">Ноутбуки для офиса</a></li>
         </ul>
-        <h2>Hоутбуки для офиса</h2>
+        <h2>Ноутбуки для офиса</h2>
             <div class="sidebar-goods-deal">
         	   <div class="filter-title"><h2>Фильтры</h2></div>
 	            <h2>Сортировка</h2>
@@ -57,48 +57,221 @@
             <div class="filter">
                     <p>Стоимость</p>
                 <h2>Производители</h2>
-                    <input type="checkbox">Lenovo
-                    <input type="checkbox">Philips
-                    <input type="checkbox">Acer
-                    <input type="checkbox">HP
+                <div>
+                    <input type="checkbox">
+                    <label for="">HP</label>
+                </div>    
+                <div>
+                    <input type="checkbox">
+                    <label for="">Lenovo</label>
+                </div> 
+                <div>
+                    <input type="checkbox">
+                    <label for="">Asus</label>
+                </div> 
+                <div>
+                    <input type="checkbox">
+                    <label for="">Acer</label>
+                </div> 
                 <h2>Видеокарта</h2>
-                    <input type="radio">NVidia
-                    <input type="radio">AMG
-                    <input type="radio">Встроенная
+               <div>
+                    <input type="checkbox">
+                    <label for="">NVIDIA</label>
+                </div> 
+                <div>
+                    <input type="checkbox">
+                    <label for="">AMD</label>
+                </div> 
+                <div>
+                    <input type="checkbox">
+                    <label for="">Встроенная</label>
+                </div> 
                 <button>Применить</button>
                 <a href="#">Сбросить фильтр</a>
             </div>
-        <div class="sidebar-goods">
-            <div class="products">
-            	<span>В наличии</span>
-                <img src="images/of1.png" alt="">
-                <p>Ноутбук HP 250 G6</p>
-                <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
-            </div>
-            <div class="products">
-                <span>В наличии</span>
-                <img src="images/of2.png" alt="">
-                <p>Ноутбук Hp Pavillion 6</p>
-                <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
-            </div>
-            <div class="products">
-                <span>В наличии</span>
-                <img src="images/of3.png" alt="">
-                <p>Ноутбук Hp Pavillion 6</p>
-                <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
-            </div>
-            <div class="products">
-                <span>В наличии</span>
-                <img src="images/PC.png" alt="">
-                <p>Ноутбук Hp Pavillion 6</p>
-                <p>11020 руб</p>
-                <button class="products-btn">В корзину</button>
-            </div>
-    	</div> 
-    </div>
+
+            <!-- Ноутбуки для офиса -->
+	<div class="sidebar-goods">
+
+		<div class="products">
+			<span>В наличии</span>
+			<img src="images/of1.png" alt="">
+			<p>Ноутбук Hp Pavillion 6 (Мышка+Коврик+Наушники) </p>
+			<!-- Комплект -->
+				<div class="complect">
+					<img src="images/mouse1.png" alt="">
+					<img src="images/corvet1.png" alt="">
+					<img src="images/headphone.png" alt="">
+				</div>
+			<p id="span1">Стоимость в комплекте: 10200 руб</p>
+				<p><s>Стоимость: 11020 руб</s></p>
+			<button class="complect-btn" onclick="show2()" ondblclick="hide2()">Подробнее</button>
+			<!-- Дополнительные товары ( нажатие на кнопку подробнее )-->
+			<div class="products_info">
+				<div>
+			<input type="checkbox" id="fclose1" checked>
+				<div class="products_items">
+					<p>Steelseries мышка</p>
+					<img src="images/mouse1.png" alt="">
+					<p>500 руб</p>
+				</div>
+				</div>
+
+				<div>
+			<input type="checkbox" id="fclose2" checked>
+				<div class="products_items">
+					<p>Коврик для мыши Razer</p>
+					<img src="images/corvet1.png" alt="">
+					<p>200 руб</p>
+				</div>
+				</div>
+				<div>
+			<input type="checkbox" id="fclose3" checked>
+				<div class="products_items">
+					<p>Наушники Senheizer</p>
+					<img src="images/headphone.png" alt="">
+					<p>100 руб</p>
+				</div>
+				</div>
+			</div>
+
+			<button class="products-btn">В корзину</button>
+		</div>
+		<div class="products">
+			<span>В наличии</span>
+			<img src="images/of2.png" alt="">
+			<p>Ноутбук Hp Pavillion 6 (Мышка+Коврик+Наушники) </p>
+			<!-- Комплект -->
+				<div class="complect">
+					<img src="images/mouse1.png" alt="">
+					<img src="images/corvet1.png" alt="">
+					<img src="images/headphone.png" alt="">
+				</div>
+				<p id="span2">Стоимость в комплекте: 800 руб</p>
+				<p><s>Стоимость: 11020 руб</s></p>
+			<button class="complect-btn" onclick="show3()" ondblclick="hide3()">Подробнее</button>
+			<!-- Дополнительные товары ( нажатие на кнопку подробнее )-->
+			<div class="products_info1">
+				<div>
+			<input type="checkbox" id="fclose11" checked>
+				<div class="products_items">
+					<p>Steelseries мышка</p>
+					<img src="images/mouse1.png" alt="">
+					<p>500 руб</p>
+				</div>
+				</div>
+
+				<div>
+			<input type="checkbox" id="fclose22" checked>
+				<div class="products_items">
+					<p>Коврик для мыши Razer</p>
+					<img src="images/corvet1.png" alt="">
+					<p>200 руб</p>
+				</div>
+				</div>
+				<div>
+			<input type="checkbox" id="fclose33" checked>
+				<div class="products_items">
+					<p>Наушники Senheizer</p>
+					<img src="images/headphone.png" alt="">
+					<p>100 руб</p>
+				</div>
+				</div>
+			</div>
+
+			<button class="products-btn">В корзину</button>
+		</div><div class="products">
+			<span>В наличии</span>
+			<img src="images/of3.png" alt="">
+			<p>Ноутбук Hp Pavillion 6 (Мышка+Коврик+Наушники) </p>
+			<!-- Комплект -->
+				<div class="complect">
+					<img src="images/mouse1.png" alt="">
+					<img src="images/corvet1.png" alt="">
+					<img src="images/headphone.png" alt="">
+				</div>
+				<p id="span3">Стоимость в комплекте: 800 руб</p>
+				<p><s>Стоимость: 11020 руб</s></p>
+			<button class="complect-btn" onclick="show4()" ondblclick="hide4()">Подробнее</button>
+			<!-- Дополнительные товары ( нажатие на кнопку подробнее )-->
+			<div class="products_info2">
+				<div>
+			<input type="checkbox" id="fclose111" checked>
+				<div class="products_items">
+					<p>Steelseries мышка</p>
+					<img src="images/mouse1.png" alt="">
+					<p>500 руб</p>
+				</div>
+				</div>
+
+				<div>
+			<input type="checkbox" id="fclose222" checked>
+				<div class="products_items">
+					<p>Коврик для мыши Razer</p>
+					<img src="images/corvet1.png" alt="">
+					<p>200 руб</p>
+				</div>
+				</div>
+				<div>
+			<input type="checkbox" id="fclose333" checked>
+				<div class="products_items">
+					<p>Наушники Senheizer</p>
+					<img src="images/headphone.png" alt="">
+					<p>100 руб</p>
+				</div>
+				</div>
+			</div>
+
+			<button class="products-btn">В корзину</button>
+		</div>
+		<div class="products">
+			<span>В наличии</span>
+			<img src="images/of3.png" alt="">
+			<p>Ноутбук Hp Pavillion 6 (Мышка+Коврик+Наушники) </p>
+			<!-- Комплект -->
+				<div class="complect">
+					<img src="images/mouse1.png" alt="">
+					<img src="images/corvet1.png" alt="">
+					<img src="images/headphone.png" alt="">
+				</div>
+				<p id="span4">Стоимость в комплекте: 800 руб</p>
+				<p><s>Стоимость: 11020 руб</s></p>
+			<button class="complect-btn" onclick="show5()" ondblclick="hide5()">Подробнее</button>
+			<!-- Дополнительные товары ( нажатие на кнопку подробнее )-->
+			<div class="products_info3">
+				<div>
+		<input type="checkbox" id="fclose1111" checked>
+				<div class="products_items">
+					<p>Steelseries мышка</p>
+					<img src="images/mouse1.png" alt="">
+					<p>500 руб</p>
+				</div>
+				</div>
+
+				<div>
+			<input type="checkbox" id="fclose2222" checked>
+				<div class="products_items">
+					<p>Коврик для мыши Razer</p>
+					<img src="images/corvet1.png" alt="">
+					<p>200 руб</p>
+				</div>
+				</div>
+				<div>
+			<input type="checkbox" id="fclose3333" checked>
+				<div class="products_items">
+					<p>Наушники Senheizer</p>
+					<img src="images/headphone.png" alt="">
+					<p>100 руб</p>
+				</div>
+				</div>
+			</div>
+
+			<button class="products-btn">В корзину</button>
+		</div>
+	</div>
+</div>
+
+</div>
     <div class="pages wrapper">
     	<ul class="pages-select">
     		<li><button>Предыдущая</button></li>
@@ -109,7 +282,7 @@
     	</ul>
     </div>
 </div>
-   <footer>
+  <footer>
         <div class="footer-top">
             <div class="footer-top-container wrapper">
                 <div class="wrap-footer wrapper">
@@ -148,4 +321,123 @@
         </div>
     </footer>
 </body>
+<script>
+    var NOMBER1 = 10200;var NOMBER2 = 800;var NOMBER3 = 800;var NOMBER4 = 800;
+    var c1 = document.querySelector('#fclose1');var c11 = document.querySelector('#fclose11');
+    var c111 = document.querySelector('#fclose111');var c1111 = document.querySelector('#fclose1111');
+    var c2 = document.querySelector('#fclose2');var c22 = document.querySelector('#fclose22');
+    var c222 = document.querySelector('#fclose222');var c2222 = document.querySelector('#fclose2222');
+    var c3 = document.querySelector('#fclose3');var c33 = document.querySelector('#fclose33');
+    var c333 = document.querySelector('#fclose333');var c3333 = document.querySelector('#fclose3333');
+    var c4 = document.querySelector('#span1');var c44 = document.querySelector('#span2');
+    var c444 = document.querySelector('#span3');var c4444 = document.querySelector('#span4');
+    c1.onclick = function() {
+        if (c1.checked) {
+            NOMBER1+=500;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        } else {
+            NOMBER1-=500;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        }
+    }
+    c2.onclick = function() {
+        if (c2.checked) {
+            NOMBER1+=200;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        } else {
+            NOMBER1-=200;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        }
+    }
+    c3.onclick = function() {
+        if (c3.checked) {
+            NOMBER1+=100;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        } else {
+            NOMBER1-=100;
+            c4.innerHTML = "Стоимость в комплекте: <br>" + NOMBER1 + " руб";
+        }
+    }
+    c11.onclick = function() {
+        if (c11.checked) {
+            NOMBER2+=500;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        } else {
+            NOMBER2-=500;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        }
+    }
+    c22.onclick = function() {
+        if (c22.checked) {
+            NOMBER2+=200;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        } else {
+            NOMBER2-=200;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        }
+    }
+    c33.onclick = function() {
+        if (c33.checked) {
+            NOMBER2+=100;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        } else {
+            NOMBER2-=100;
+            c44.innerHTML = "Стоимость в комплекте: <br>" + NOMBER2 + " руб";
+        }
+    }
+    c111.onclick = function() {
+        if (c111.checked) {
+            NOMBER3+=500;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        } else {
+            NOMBER3-=500;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        }
+    }
+    c222.onclick = function() {
+        if (c222.checked) {
+            NOMBER3+=200;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        } else {
+            NOMBER3-=200;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        }
+    }
+    c333.onclick = function() {
+        if (c333.checked) {
+            NOMBER3+=100;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        } else {
+            NOMBER3-=100;
+            c444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER3 + " руб";
+        }
+    }
+    c1111.onclick = function() {
+        if (c1111.checked) {
+            NOMBER4+=500;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        } else {
+            NOMBER4-=500;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        }
+    }
+    c2222.onclick = function() {
+        if (c2222.checked) {
+            NOMBER4+=200;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        } else {
+            NOMBER4-=200;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        }
+    }
+    c3333.onclick = function() {
+        if (c3333.checked) {
+            NOMBER4+=100;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        } else {
+            NOMBER4-=100;
+            c4444.innerHTML = "Стоимость в комплекте: <br>" + NOMBER4 + " руб";
+        }
+    }
+</script>
 </html>
